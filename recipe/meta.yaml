@@ -12,14 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - python >=3.5
+    - pip
   run:
+    - python >=3.5
     - numpy
     - pandas
     - astropy
@@ -35,7 +37,6 @@ about:
   license_family: GPL
   license_file: LICENSE
   summary: 'Python for space physics'
-
   description: |
     HelioPy is a package for automatically downloading and reading in common
     data files used in space physics.
