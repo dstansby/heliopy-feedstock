@@ -20,6 +20,7 @@ requirements:
     - python
     - setuptools
   run:
+    - python
     - numpy
     - pandas
     - astropy
