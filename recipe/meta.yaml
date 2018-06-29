@@ -38,8 +38,7 @@ about:
   license_file: LICENSE
   summary: 'Python for space physics'
   description: |
-    HelioPy is a package for automatically downloading and reading in common
-    data files used in space physics.
+    HelioPy is a package for heliospheric and planetary phsyics.
   doc_url: http://docs.heliopy.org/en/stable/
   dev_url: https://github.com/heliopython/heliopy
 
